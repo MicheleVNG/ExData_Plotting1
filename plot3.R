@@ -19,6 +19,7 @@ plot(tbl$Sub_metering_1 ~ tbl$Datetime, type = "l",
      ylab = "Energy sub metering", xlab = "")
 lines(tbl$Sub_metering_2 ~ tbl$Datetime, col = "red")
 lines(tbl$Sub_metering_3 ~ tbl$Datetime, col = "blue")
-legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub metering 1", "Sub metering 2", "Sub metering 3"))
+legend("topright", lty = 1, col = c("black", "red", "blue"),
+       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 dev.off()
